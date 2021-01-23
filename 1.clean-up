@@ -1,0 +1,7 @@
+library(foreign)
+womenhealth <- read.spss("WOMEN AND HEALTH2.sav", use.value.label=TRUE, to.data.frame=TRUE)
+attach(womenhealth)
+names(womenhealth)
+str(womenhealth)
+WH = womenhealth[complete.cases(womenhealth),]
+str(WH)
