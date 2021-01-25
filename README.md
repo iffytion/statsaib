@@ -14,3 +14,5 @@ TO DOs
 - interpret results / modelling results
 - conclusion of modelling: strength, weakness
 - all R codes in Appendix
+
+### if you want to add new file, click 'Add File' near green Code button. it's gonna be a new text file where you can write anything you want, codes or points whatever.
