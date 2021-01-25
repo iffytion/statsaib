@@ -12,3 +12,5 @@ TO DOs
 - exploratory works for data modelling / data analysis
 - data modelling or data analysis processes: include tables of results, graphs, results coefficients, model diagnostics, model fitting or model assessments
 - interpret results / modelling results
+- conclusion of modelling: strength, weakness
+- all R codes in Appendix
