@@ -1,0 +1,23 @@
+#Clean the data
+> attach(Women_Health)
+> WH = na.omit(Women_Health)
+> WH
+
+#Reversing Religion5 
+> WH$reli5 = recode(WH$reli5, "1=5;2=4;3=3;4=2;5=1")
+> WH$reli5
+
+#Select only Religion, Health, and Life Satisfaction
+> Religion = select(WH, reli1, reli2, reli3, reli4, reli5)
+> Health = select(WH, ghq1, ghq2, ghq3, ghq4, ghq5, ghq6, ghq7, ghq8, ghq9, ghq10, ghq11, ghq12)
+> Life.Satisfaction = select(WH, life1, life2, life3, life4, life5)
+
+#Sum of row for each of the variable
+> Religion$Total.Score.Of.Religion = rowSums(Religion)
+> Health$Total.Score.Of.Health = rowSums(Health)
+> Life.Satisfaction$Total.Score.Of.Life.Satisfaction = rowSums(Life.Satisfaction)
+
+#Renaming the total score of each variable
+> TotalHealth = Health$Total.Score.Of.Health
+> TotalReligion = Religion$Total.Score.Of.Religion
+> TotalLifeSatisfaction = Life.Satisfaction$Total.Score.Of.Life.Satisfaction
