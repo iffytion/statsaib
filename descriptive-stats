@@ -1,2 +1,2 @@
 library(psych)          #load library
-describe(womenhealth)   #to produce descriptive stats output
+describe(WH)     #to produce descriptive stats output of cleaned data
